@@ -8,7 +8,7 @@ module.exports = {
 
 // Database Name
 
-// const dbName = 'walkwithmedb';
+// const dbName = 'product_db';
 
 const dbName = config.dbName;
 

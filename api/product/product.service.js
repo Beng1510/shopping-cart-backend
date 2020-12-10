@@ -55,10 +55,10 @@ async function update(product) {
 
 
 
-// function _buildCriteria(filter) {
-// 	const criteria = {};
-// 	if (filter.name) criteria.name = { $regex: filter.name };
-// 	if (filter.type) criteria.type = filter.type;
-// 	if (filter.region) criteria.region = filter.region;
-// 	return criteria;
-// }
+function _buildCriteria(filter) {
+	const criteria = {};
+	if (filter.name) criteria.name = { $regex: filter.name };
+	if (filter.type) criteria.type = filter.type;
+	if (filter.region) criteria.region = filter.region;
+	return criteria;
+}

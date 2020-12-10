@@ -4,6 +4,7 @@ const productService = require('./product.service')
 async function getProducts(req, res) {
     
     const products = await productService.query(req.query)
+    console.log('products',products);
     res.send(products)
 }
 
