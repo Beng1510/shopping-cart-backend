@@ -11,7 +11,7 @@ app.use( express.static( 'public' ));
 // Express App Config
 app.use(bodyParser.json());
 app.use(session({
-    secret: 'finel proj',
+    secret: 'final proj',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
@@ -29,8 +29,6 @@ if (process.env.NODE_ENV === 'production') {
 
 
 const prodRoutes = require('./api/product/product.routes')
-
-
 
 // routes
 app.use('/api/product', prodRoutes)

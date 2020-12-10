@@ -3,8 +3,6 @@ const { getProducts, updateProduct} = require('./product.controller')
 const router = express.Router()
 
 
-
-
 router.get('/', getProducts)
 router.put('/:id',  updateProduct)
 
